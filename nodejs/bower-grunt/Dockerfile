@@ -1,6 +1,6 @@
 FROM gnhuy91/nodejs
 
 USER root
-RUN npm -g bower grunt
+RUN npm install -g bower grunt
 
 USER node
