@@ -3,7 +3,7 @@ FROM golang:1.6
 MAINTAINER Huy Giang <gnhuy91@gmail.com>
 
 ENV PROTO_VERSION v3.0.0
-ENV BUILD_PACKAGES 'git curl unzip build-essential autoconf libtool'
+ENV BUILD_PACKAGES 'git unzip build-essential autoconf libtool'
 
 RUN apt-get update && \
     apt-get -y install ${BUILD_PACKAGES} && \
