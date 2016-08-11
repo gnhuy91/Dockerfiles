@@ -1,4 +1,4 @@
-# protobuf Docker image
+# protobuf
 
 Tiny Protocol Buffers 3 Docker image, powered by Alpine Linux.
 

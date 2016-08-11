@@ -1,4 +1,4 @@
-# protobuf Go Docker image
+# protobuf Go
 
 Go support for Protocol Buffers, inside a tiny Docker image.
 
