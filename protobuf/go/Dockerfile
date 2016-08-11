@@ -14,5 +14,4 @@ RUN apk add --update --no-cache $BUILD_PACKAGES go && \
     go get google.golang.org/grpc && \
     go get github.com/golang/protobuf/protoc-gen-go && \
     apk del $BUILD_PACKAGES && \
-    rm -rf /var/cache/apk && \
-    rm -rf /usr/share/man
+    rm -rf /var/cache/apk
