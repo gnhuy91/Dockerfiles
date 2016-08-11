@@ -1,5 +1,4 @@
 FROM gliderlabs/alpine:3.4
-
 MAINTAINER Huy Giang <gnhuy91@gmail.com>
 
 ENV PROTO_VERSION "v3.0.0"
