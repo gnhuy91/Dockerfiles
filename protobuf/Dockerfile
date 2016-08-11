@@ -15,10 +15,11 @@ RUN apk add --update --no-cache $BUILD_PACKAGES && \
     make install && \
     cd .. && \
     rm -rf protobuf && \
-    # libstdc++ is required for running protobuf binary
-    apk add --no-cache libstdc++ && \
     # Cleanup installed packages
     apk del $BUILD_PACKAGES && \
     rm -rf /var/cache/apk
+
+# libstdc++ is required for running protoc binary
+RUN apk add --no-cache libstdc++
 
 ENTRYPOINT ["protoc"]
