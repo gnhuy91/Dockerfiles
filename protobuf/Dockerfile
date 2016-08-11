@@ -19,6 +19,7 @@ RUN apk add --update --no-cache $BUILD_PACKAGES && \
     apk add --no-cache libstdc++ && \
     # Cleanup installed packages
     apk del $BUILD_PACKAGES && \
-    rm -rf /var/cache/apk/*
+    rm -rf /var/cache/apk && \
+    rm -rf /usr/share/man
 
 ENTRYPOINT ["protoc"]
