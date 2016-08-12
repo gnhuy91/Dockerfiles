@@ -1,4 +1,4 @@
-FROM gliderlabs/alpine:3.4
+FROM alpine:3.4
 MAINTAINER Huy Giang <gnhuy91@gmail.com>
 
 ENV PROTO_VERSION "v3.0.0"
@@ -20,6 +20,6 @@ RUN apk add --update --no-cache $BUILD_PACKAGES && \
     rm -rf /var/cache/apk
 
 # libstdc++ is required for running protoc binary
-RUN apk add --no-cache libstdc++ && rm -rf /var/cache/apk
+RUN apk add --no-cache libstdc++
 
 ENTRYPOINT ["protoc"]
