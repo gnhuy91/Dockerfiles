@@ -6,7 +6,7 @@ Go support for Protocol Buffers, inside a tiny Docker image.
 
 ```console
 docker run --rm \
-    -u $(shell id -u):$(shell id -g) \
+    -u $(id -u):$(id -g) \
     -v $(PWD):/src:rw \
     -w /src \
     gnhuy91/protobuf-go \
