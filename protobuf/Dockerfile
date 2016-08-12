@@ -20,6 +20,6 @@ RUN apk add --update --no-cache $BUILD_PACKAGES && \
     rm -rf /var/cache/apk
 
 # libstdc++ is required for running protoc binary
-RUN apk add --no-cache libstdc++
+RUN apk add --no-cache libstdc++ && rm -rf /var/cache/apk
 
 ENTRYPOINT ["protoc"]
