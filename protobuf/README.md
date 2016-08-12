@@ -1,7 +1,6 @@
 # protobuf
 
-[![Docker Stars](https://img.shields.io/docker/stars/gnhuy91/protobuf.svg)][hub]
-[![Docker Pulls](https://img.shields.io/docker/pulls/gnhuy91/protobuf.svg)][hub]
+[![Docker Stars](https://img.shields.io/docker/stars/gnhuy91/protobuf.svg)][hub] [![Docker Pulls](https://img.shields.io/docker/pulls/gnhuy91/protobuf.svg)][hub]
 
 Tiny (7 mb) Protocol Buffers 3 Docker image, powered by Alpine Linux.
 
