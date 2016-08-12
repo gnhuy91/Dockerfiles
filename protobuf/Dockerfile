@@ -18,8 +18,7 @@ ENV ALPINE_GLIBC_URL=https://github.com/sgerrand/alpine-pkg-glibc/releases/downl
 ENV GLIBC_PKG=glibc-${GLIBC_VERSION}.apk
 ENV GLIBC_BIN_PKG=glibc-bin-${GLIBC_VERSION}.apk
 
-RUN \
-    apk add --update --no-cache -t deps wget ca-certificates \
+RUN apk add --update --no-cache -t deps wget ca-certificates \
     && cd /tmp \
     # install glibc
     && wget ${ALPINE_GLIBC_URL}${GLIBC_PKG} \
