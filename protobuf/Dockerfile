@@ -12,6 +12,7 @@ ENV PROTOBUF_URL=https://github.com/google/protobuf/releases/download/v${PROTOBU
 # Thanks to:
 # - https://github.com/gliderlabs/docker-alpine/issues/11
 # - https://github.com/sgerrand/alpine-pkg-glibc
+# - https://github.com/sdurrheimer/alpine-glibc/blob/master/Dockerfile
 #
 ENV GLIBC_VERSION="2.23-r3"
 ENV ALPINE_GLIBC_URL=https://github.com/sgerrand/alpine-pkg-glibc/releases/download/${GLIBC_VERSION}/
