@@ -4,7 +4,7 @@ Go support for Protocol Buffers, inside a tiny Docker image.
 
 # Usage
 
-```console
+```sh
 docker run --rm \
     -u $(id -u):$(id -g) \
     -v $(PWD):/src:rw \

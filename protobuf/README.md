@@ -4,7 +4,7 @@ Tiny Protocol Buffers 3 Docker image, powered by Alpine Linux.
 
 # Usage
 
-```console
+```sh
 # Print protobuf help message
 docker run -it --rm \
     gnhuy91/protobuf --help
