@@ -7,11 +7,12 @@ RUN mkdir -p /go/src /go/bin && \
 ENV GOPATH /go
 ENV PATH $GOPATH/bin:$PATH
 
-ENV BUILD_PACKAGES "git ca-certificates"
+ENV BUILD_PACKAGES "git ca-certificates go"
 
-RUN apk add --update --no-cache $BUILD_PACKAGES go && \
-    # Get Go grpc
-    go get google.golang.org/grpc && \
-    go get github.com/golang/protobuf/protoc-gen-go && \
+RUN apk add --update --no-cache $BUILD_PACKAGES && \
+    # Get Go protobuf
+    go get -u github.com/golang/protobuf/proto \
+        github.com/golang/protobuf/protoc-gen-go && \
+    # Cleanup
     apk del $BUILD_PACKAGES && \
     rm -rf /var/cache/apk
