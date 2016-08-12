@@ -1,6 +1,9 @@
 # protobuf Go
 
-Go support for Protocol Buffers, inside a tiny (**9** mb) Docker image.
+[![Docker Stars](https://img.shields.io/docker/stars/gnhuy91/protobuf-go.svg)][hub]
+[![Docker Pulls](https://img.shields.io/docker/pulls/gnhuy91/protobuf-go.svg)][hub]
+
+Go support for Protocol Buffers, inside a tiny (9 mb) Docker image.
 
 # Usage
 
@@ -12,3 +15,5 @@ docker run --rm \
     gnhuy91/protobuf-go \
     --go_out=. *.proto
 ```
+
+[hub]: https://hub.docker.com/r/gnhuy91/protobuf-go/
