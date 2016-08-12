@@ -1,6 +1,6 @@
 # protobuf
 
-Tiny Protocol Buffers 3 Docker image, powered by Alpine Linux.
+Tiny (**7** mb) Protocol Buffers 3 Docker image, powered by Alpine Linux.
 
 # Usage
 

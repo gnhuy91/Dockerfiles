@@ -1,6 +1,6 @@
 # protobuf Go
 
-Go support for Protocol Buffers, inside a tiny Docker image.
+Go support for Protocol Buffers, inside a tiny (**9** mb) Docker image.
 
 # Usage
 
