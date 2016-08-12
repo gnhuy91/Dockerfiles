@@ -15,5 +15,5 @@ RUN apk add --update --no-cache $BUILD_PACKAGES && \
         github.com/golang/protobuf/protoc-gen-go && \
     # Cleanup
     rm -rf $GOPATH/src/* && \
-    apk del $BUILD_PACKAGES && \
-    rm -rf /var/cache/apk
+    apk del --purge $BUILD_PACKAGES && \
+    rm -rf /var/cache/apk/*
