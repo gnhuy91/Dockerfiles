@@ -1,4 +1,4 @@
-# protobuf Go
+# protobuf-go
 
 [![Docker Stars](https://img.shields.io/docker/stars/gnhuy91/protobuf-go.svg)][hub] [![Docker Pulls](https://img.shields.io/docker/pulls/gnhuy91/protobuf-go.svg)][hub]
 
