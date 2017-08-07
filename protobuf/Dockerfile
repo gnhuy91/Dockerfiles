@@ -30,7 +30,7 @@ RUN apk add --update --no-cache -t deps wget ca-certificates \
     && echo 'hosts: files mdns4_minimal [NOTFOUND=return] dns mdns4' >> /etc/nsswitch.conf \
     # install protobuf
     && wget ${PROTOBUF_URL} \
-    && unzip ${PROTOBUF_ZIP} 'bin/*' -d /usr \
+    && unzip ${PROTOBUF_ZIP} -d /usr \
     # Cleanup
     && apk del --purge deps \
     && rm -rf /tmp/* /var/cache/apk/*
