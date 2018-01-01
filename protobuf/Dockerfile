@@ -2,7 +2,7 @@ FROM alpine:3.4
 MAINTAINER Huy Giang <gnhuy91@gmail.com>
 
 # Protobuf version
-ENV PROTOBUF_VERSION="3.0.0"
+ENV PROTOBUF_VERSION="3.3.0"
 ENV PROTOBUF_ZIP=protoc-${PROTOBUF_VERSION}-linux-x86_64.zip
 ENV PROTOBUF_URL=https://github.com/google/protobuf/releases/download/v${PROTOBUF_VERSION}/${PROTOBUF_ZIP}
 
